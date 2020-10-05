@@ -24,7 +24,7 @@ let g = 9.8;
 
 let cubeT = Math.pow(t,2);
 
-let result = (g * t)/2;
+let result = (g * cubeT)/2;
 
 alert('Расстояние,пройденное телом за время свободного падения = ' + result)
 
@@ -36,24 +36,24 @@ alert('Расстояние,пройденное телом за время св
 
 let question = +prompt('Ввести натуральное трехзначное число','');
 
-function composition(question){
+function digitsMultiplication(question){
 
      let str = String(question);
-     let sumOne = Number(str[0] * str[1] * str[2]);
+     let numberMultiplication = Number(str[0] * str[1] * str[2]);
 
-     return sumOne;
+     return numberMultiplication;
 }
 
-function compositionTwo(question){
+function digitsSum(question){
 
     let sumTwo = 0;    
      let str = String(question);
-     sumTwo = Number(str[0]) + Number(str[2]);
+     numberSum = Number(str[0]) + Number(str[2]);
 
-     return sumTwo;
+     return numberSum;
 }
 
-alert('Произведение цифр твоего числа = ' + composition(question));
+alert('Произведение цифр твоего числа = ' + digitsMultiplication(question));
 alert('Cумму старшей и младшей цифры числа = ' + compositionTwo(question));
 
 
